@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">calorie_run</string>
+    <string name="title_index">首页</string>
+    <string name="title_salad">沙拉</string>
+    <string name="title_shop">商城</string>
+    <string name="title_sports">运动</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

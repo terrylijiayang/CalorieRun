@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#24c792</color>
+    <color name="colorPrimaryDark">#24c792</color>
+    <color name="colorAccent">#24c792</color>
+
+    <color name="green">#24c792</color><!--绿色 -->
+    <color name="gray">#c1cdc1</color><!--灰色 -->
+    <color name="white">#ffffff</color><!--白色 -->
+    <color name="black">#000000</color><!--黑色 -->
+
+</resources>
