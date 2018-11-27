@@ -103,6 +103,7 @@
                     android:background="@color/colorAccent"
                     android:gravity="center_vertical|center_horizontal|center"
                     android:text="今日签到"
+                    android:textSize="20dp"
                     android:textColor="@color/white" />
 
                 <RelativeLayout

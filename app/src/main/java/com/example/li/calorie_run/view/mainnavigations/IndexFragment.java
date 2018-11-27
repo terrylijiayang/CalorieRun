@@ -1,5 +1,6 @@
 package com.example.li.calorie_run.view.mainnavigations;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,16 +8,19 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.li.calorie_run.R;
+import com.example.li.calorie_run.view.LoginActivity;
+import com.example.li.calorie_run.view.MainActivity;
 
 
 public class IndexFragment extends Fragment {
 
     private View view;
     private SwipeRefreshLayout mRefreshLayout;// SwipeRefreshLayout下拉刷新控件
-
+    private ImageView imageView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,16 @@ public class IndexFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_index, container, false);
+
+        imageView=(ImageView)view.findViewById(R.id.img_user);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         mRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.srl_index);
         // 下拉刷新颜色控制
