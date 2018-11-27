@@ -1,22 +1,20 @@
 package com.example.li.calorie_run.view.mainnavigations;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.TextView;
 
 import com.example.li.calorie_run.R;
 import com.example.li.calorie_run.view.mainnavigations.saladtabs.SaladHotFragment;
-import com.example.li.calorie_run.view.mainnavigations.saladtabs.SaladIndexFragment;
+import com.example.li.calorie_run.view.mainnavigations.saladtabs.SaladHomeFragment;
 
 
 public class SaladFragment extends Fragment {
@@ -24,7 +22,7 @@ public class SaladFragment extends Fragment {
     private TabLayout tabLayout = null;
     private ViewPager vp_pager;
     private View view;
-    private Fragment[] mFragmentArrays = new Fragment[8];
+    private Fragment[] mFragmentArrays = new Fragment[6];
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,49 +45,45 @@ public class SaladFragment extends Fragment {
 
     private void initView() {
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
-        vp_pager.setAdapter(new MorePagerAdapter());
-        tabLayout.setupWithViewPager(vp_pager);
-        mFragmentArrays[0] = SaladIndexFragment.newInstance();
+//        vp_pager.setAdapter(new MorePagerAdapter());
+//        tabLayout.setupWithViewPager(vp_pager);
+        mFragmentArrays[0] = SaladHomeFragment.newInstance();
         mFragmentArrays[1] = SaladHotFragment.newInstance();
         mFragmentArrays[2] = SaladHotFragment.newInstance();
         mFragmentArrays[3] = SaladHotFragment.newInstance();
         mFragmentArrays[4] = SaladHotFragment.newInstance();
         mFragmentArrays[5] = SaladHotFragment.newInstance();
-        mFragmentArrays[6] = SaladHotFragment.newInstance();
-        mFragmentArrays[7] = SaladHotFragment.newInstance();
+
+        PagerAdapter pagerAdapter = new SaladFragment.MorePagerAdapter(getFragmentManager());
+        vp_pager.setAdapter(pagerAdapter);
+        //将ViewPager和TabLayout绑定
+        tabLayout.setupWithViewPager(vp_pager);
+        tabLayout.getTabAt(1).select();
     }
 
-    final class MorePagerAdapter extends PagerAdapter {
+    final class MorePagerAdapter extends FragmentPagerAdapter {
+
+        String[] arr={"首页","沙拉","最热","活动","会员","评价"};
+
+        public MorePagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentArrays[position];
+        }
+
 
         @Override
         public int getCount() {
-            return 8;
-        }
-
-        @Override
-        public Object instantiateItem(ViewGroup container, int position) {
-//            TextView tv = new TextView(getActivity());
-//            tv.setText("布局" + position);
-//            tv.setTextSize(30.0f);
-//            tv.setGravity(Gravity.CENTER);
-//            (container).addView(tv);
-
-            return mFragmentArrays[position].getView();
-        }
-
-        @Override
-        public void destroyItem(ViewGroup container, int position, Object object) {
-            (container).removeView((View) object);
-        }
-
-        @Override
-        public boolean isViewFromObject(View view, Object object) {
-            return view == object;
+            return mFragmentArrays.length;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return "选项" + position;
+            return arr[position];
+
         }
     }
 }

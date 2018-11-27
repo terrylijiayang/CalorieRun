@@ -44,7 +44,7 @@ public class IndexFragment extends Fragment {
                     public void run() {
                         // 设置是否开始刷新,true为刷新，false为停止刷新
                         mRefreshLayout.setRefreshing(true);
-                        Toast.makeText(getActivity(),"ok",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(),"刷新",Toast.LENGTH_SHORT).show();
                         mRefreshLayout.setRefreshing(false);
                     }
                 });

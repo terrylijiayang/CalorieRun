@@ -17,7 +17,7 @@
             android:layout_weight="1"
             android:letterSpacing="1.5"
             android:scaleType="fitXY"
-            android:src="@drawable/pic_index_zhuxuejin_black" />
+            android:src="@mipmap/pic_index_zhuxuejin_black" />
 
         <TextView
             android:id="@+id/txt_title"

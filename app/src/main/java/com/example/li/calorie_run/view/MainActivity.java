@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements
     //初始化fragment和fragment数组
     private void initFragment()
     {
-
         //import android.app.Fragment;   Fragment的类型
         indexFragment  = new IndexFragment();
         saladFragment  = new SaladFragment();
@@ -104,10 +103,10 @@ public class MainActivity extends AppCompatActivity implements
                 }
                 case R.id.navigation_sports:
                 {
-                    if(lastfragment!=2)
+                    if(lastfragment!=3)
                     {
-                        switchFragment(lastfragment,2);
-                        lastfragment=2;
+                        switchFragment(lastfragment,3);
+                        lastfragment=3;
                     }
                     return true;
                 }

@@ -7,7 +7,6 @@
     tools:context=".view.mainnavigations.SaladFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,23 +14,37 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp">
+            android:layout_height="120dp"
+            android:id="@+id/salad_head">
 
             <com.loopj.android.image.SmartImageView
                 android:id="@+id/img_salad_header_black"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@drawable/pic_salad_header_black" />
-
+                android:src="@mipmap/pic_salad_header_black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="卡路里快跑"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:gravity="right"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
                 android:layout_marginBottom="5dp"
                 android:orientation="horizontal">
 
@@ -39,7 +52,6 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignParentStart="true"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/bd_wihte_bno_radius"
                     android:gravity="center_vertical"
@@ -54,7 +66,7 @@
                         android:layout_weight="1"
                         android:background="@null"
                         android:ems="10"
-                        android:hint="请输入搜索内容"
+                        android:hint="大暑沙拉"
                         android:inputType="textPersonName"
                         android:paddingLeft="10dp"
                         android:paddingRight="5dp"
@@ -65,11 +77,11 @@
 
                     <ImageView
                         android:id="@+id/img_searchsalad"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_search_black"
+                        android:src="@mipmap/ic_search_black"
                         tools:layout_editor_absoluteX="286dp"
                         tools:layout_editor_absoluteY="14dp" />
 
@@ -79,14 +91,13 @@
                     android:id="@+id/salad_tablayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_weight="1"
-                    android:background="#e13636"
-                    app:tabIndicatorColor="@color/green"
+                    app:tabIndicatorColor="@color/white"
                     app:tabIndicatorHeight="5dp"
                     app:tabMode="fixed"
-                    app:tabSelectedTextColor="@color/black"
+                    android:textColor="@color/white"
+                    app:tabSelectedTextColor="@color/white"
                     app:tabTextAppearance="@style/TabStyle" />
 
             </LinearLayout>
@@ -95,6 +106,7 @@
 
         <android.support.v4.view.ViewPager
             android:id="@+id/tab_saladviewpager"
+            android:layout_below="@+id/salad_head"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

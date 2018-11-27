@@ -51,8 +51,8 @@ public class ShopDataAdapter extends BaseAdapter{
 
         SmartImageView smartImageView = (SmartImageView) view.findViewById(R.id.img_title);
         smartImageView.setImageUrl(ConstantValue.SERVER_PATH + arrayList.get(i).get("seller_img_path").toString(),//加载指定地址的图片http://s1.dwstatic.com/lushicard/Lyra_the_Sunshard.png
-                R.drawable.pic_index_haiwaigou_black,//指定图片没找到时显示的图片
-                R.drawable.pic_index_haiwaigou_black);//正在加载中显示的图片.
+                R.mipmap.pic_index_haiwaigou_black,//指定图片没找到时显示的图片
+                R.mipmap.pic_index_haiwaigou_black);//正在加载中显示的图片.
         return view;
     }
 }

@@ -54,16 +54,10 @@ public class ShopSellerFragment extends Fragment {
         map.put("seller_title","测试");
         map.put("seller_img_path","");
         list.add(map);
-        list.add(map);
-        list.add(map);
-        list.add(map);
-        list.add(map);
-        list.add(map);
-        list.add(map);
-        list.add(map);
-        listView = view.findViewById(R.id.lv_seller);
-        adapter = new ShopDataAdapter(getActivity(),(ArrayList)list);
-        listView.setAdapter(adapter);
+
+//        listView = view.findViewById(R.id.lv_seller);
+//        adapter = new ShopDataAdapter(getActivity(),(ArrayList)list);
+//        listView.setAdapter(adapter);
     }
 
     public interface OnFragmentInteractionListener {
