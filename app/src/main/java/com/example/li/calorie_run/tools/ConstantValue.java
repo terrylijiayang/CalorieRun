@@ -5,5 +5,5 @@ package com.example.li.calorie_run.tools;
  * @create_date 2018-11-24-19:58
  */
 public class ConstantValue {
-    public static final String SERVER_PATH = "";
+    final static public String SERVER_PATH = "https://calorierun.chinacloudsites.cn";
 }
