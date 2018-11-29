@@ -51,15 +51,15 @@ public class SaladFragment extends Fragment {
         mFragmentArrays[0] = SaladHomeFragment.newInstance();
         mFragmentArrays[1] = SaladHotFragment.newInstance();
         mFragmentArrays[2] = SaladMainFragment.newInstance();
-        mFragmentArrays[3] = SaladHotFragment.newInstance();
+        mFragmentArrays[3] = SaladHomeFragment.newInstance();
         mFragmentArrays[4] = SaladHotFragment.newInstance();
-        mFragmentArrays[5] = SaladHotFragment.newInstance();
+        mFragmentArrays[5] = SaladMainFragment.newInstance();
 
         PagerAdapter pagerAdapter = new SaladFragment.MorePagerAdapter(getFragmentManager());
         vp_pager.setAdapter(pagerAdapter);
         //将ViewPager和TabLayout绑定
         tabLayout.setupWithViewPager(vp_pager);
-        tabLayout.getTabAt(1).select();
+        tabLayout.getTabAt(0).select();
     }
 
     final class MorePagerAdapter extends FragmentPagerAdapter {

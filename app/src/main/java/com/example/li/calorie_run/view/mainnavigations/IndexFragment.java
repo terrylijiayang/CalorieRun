@@ -48,8 +48,8 @@ public class IndexFragment extends Fragment {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), LoginActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getActivity(), MeFragment.class);
+//                startActivity(intent);
             }
         });
 

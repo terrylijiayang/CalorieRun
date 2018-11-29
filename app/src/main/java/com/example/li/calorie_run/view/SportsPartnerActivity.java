@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.li.calorie_run.R;
+import com.example.li.calorie_run.view.mainnavigations.MeFragment;
 
 public class SportsPartnerActivity extends AppCompatActivity {
 
@@ -24,5 +25,24 @@ public class SportsPartnerActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btn_detail1=(Button)this.findViewById(R.id.btn_join_1);
+        btn_detail1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SportsPartnerActivity.this, SportDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn_detail2=(Button)this.findViewById(R.id.btn_join_2);
+        btn_detail2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SportsPartnerActivity.this, SportDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

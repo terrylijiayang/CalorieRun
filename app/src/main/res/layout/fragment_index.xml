@@ -203,7 +203,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="30dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
@@ -228,6 +228,8 @@
                             android:id="@+id/editText3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
                             android:text="无论是樱桃的甘美，还是巧克力的甜腻，食物总是吸引着人类神奇的味蕾（lěi）。懂得料理的人都说，料理是有情感的，它们需要用心对待，用爱烹煮。同样地，以鲜艳的食色涂抹音乐也是另一种爱。当音乐与美食相携而行，餐桌上的圣女果正在呼吸顿挫，藤蔓间的葡萄只为浪漫一醉而结成一串。挂着露珠的棠梨叙述着初恋的写意，汤中一群呛口的红辣椒，也嘶吼着爱情里所有的冲锋陷阵。今天，Music Bazaar就将带着你一同回味情感料理在音乐中发酵时的温度，来音乐的怀里，唤醒沉睡的味蕾，让情感的料理，住进胃里。"
                              />
                     </LinearLayout>
