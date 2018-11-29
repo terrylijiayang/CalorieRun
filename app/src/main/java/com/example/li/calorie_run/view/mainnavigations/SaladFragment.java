@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import com.example.li.calorie_run.R;
 import com.example.li.calorie_run.view.mainnavigations.saladtabs.SaladHotFragment;
 import com.example.li.calorie_run.view.mainnavigations.saladtabs.SaladHomeFragment;
+import com.example.li.calorie_run.view.mainnavigations.saladtabs.SaladMainFragment;
 
 
 public class SaladFragment extends Fragment {
@@ -49,16 +50,16 @@ public class SaladFragment extends Fragment {
 //        tabLayout.setupWithViewPager(vp_pager);
         mFragmentArrays[0] = SaladHomeFragment.newInstance();
         mFragmentArrays[1] = SaladHotFragment.newInstance();
-        mFragmentArrays[2] = SaladHotFragment.newInstance();
-        mFragmentArrays[3] = SaladHotFragment.newInstance();
+        mFragmentArrays[2] = SaladMainFragment.newInstance();
+        mFragmentArrays[3] = SaladHomeFragment.newInstance();
         mFragmentArrays[4] = SaladHotFragment.newInstance();
-        mFragmentArrays[5] = SaladHotFragment.newInstance();
+        mFragmentArrays[5] = SaladMainFragment.newInstance();
 
         PagerAdapter pagerAdapter = new SaladFragment.MorePagerAdapter(getFragmentManager());
         vp_pager.setAdapter(pagerAdapter);
         //将ViewPager和TabLayout绑定
         tabLayout.setupWithViewPager(vp_pager);
-        tabLayout.getTabAt(1).select();
+        tabLayout.getTabAt(0).select();
     }
 
     final class MorePagerAdapter extends FragmentPagerAdapter {

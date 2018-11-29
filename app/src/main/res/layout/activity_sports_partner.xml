@@ -436,31 +436,31 @@
 
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:padding="20dp" >
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="108dp"
+                android:layout_height="fill_parent"
                 android:orientation="vertical"
-                android:gravity="center"
-                >
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:id="@+id/btn_sportclub_add"
-                    android:src="@mipmap/look_partner_add"
-                    android:layout_gravity="center"/>
+                android:layout_weight="1"
+                android:padding="20dp" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:id="@+id/btn_sportclub_add"
+                            android:src="@mipmap/look_partner_add"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>

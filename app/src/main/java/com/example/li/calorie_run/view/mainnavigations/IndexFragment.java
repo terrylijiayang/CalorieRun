@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,8 +15,9 @@ import android.widget.Toast;
 
 import com.example.li.calorie_run.R;
 import com.example.li.calorie_run.view.AccountView;
-import com.example.li.calorie_run.view.LoginActivity;
-import com.example.li.calorie_run.view.MainActivity;
+import com.example.li.calorie_run.util.HeadUtil;
+
+import com.example.li.calorie_run.view.adapter.MainHeaderAdAdapter;
 
 
 public class IndexFragment extends Fragment implements AccountView {
@@ -22,6 +25,9 @@ public class IndexFragment extends Fragment implements AccountView {
     private View view;
     private SwipeRefreshLayout mRefreshLayout;// SwipeRefreshLayout下拉刷新控件
     private ImageView imageView;
+
+    protected  int [] icons={R.mipmap.pic_index_black,R.mipmap.back41,R.mipmap.component64};
+    protected ViewPager mVPagerHeaderAd;//广告头
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,12 +40,25 @@ public class IndexFragment extends Fragment implements AccountView {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_index, container, false);
 
+        mVPagerHeaderAd= (ViewPager) view.findViewById(R.id.vpager_main_header_ad);
+        MainHeaderAdAdapter adapter=new MainHeaderAdAdapter(getActivity(), HeadUtil.getHeaderAddInfo(getActivity(),icons));
+        mVPagerHeaderAd.setAdapter(adapter);
+
+
         imageView=(ImageView)view.findViewById(R.id.img_user);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), LoginActivity.class);
-                startActivity(intent);
+
+//                Intent intent = new Intent(getActivity(), MeFragment.class);
+//                startActivity(intent);
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                MeFragment demoFragment = new MeFragment();
+                ft
+                        .addToBackStack(null)  //将当前fragment加入到返回栈中
+                        .replace(R.id.fragment_index,demoFragment)
+                        .show(demoFragment)
+                        .commit();
             }
         });
 

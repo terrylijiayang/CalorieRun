@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_index"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="50dp"
@@ -82,19 +83,29 @@
 
                 </RelativeLayout>
 
-                <com.loopj.android.image.SmartImageView
+                <!--轮播-->
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vpager_main_header_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp">
+
+                </android.support.v4.view.ViewPager>
+
+                <!--           <com.loopj.android.image.SmartImageView
                     android:id="@+id/img_index_header__black"
                     android:layout_width="match_parent"
                     android:layout_height="242dp"
                     android:layout_marginTop="20dp"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/pic_index_black" />
+                    android:src="@mipmap/pic_index_black" />-->
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="60dp"
                     android:layout_marginBottom="30dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
@@ -103,8 +114,8 @@
                     android:background="@color/colorAccent"
                     android:gravity="center_vertical|center_horizontal|center"
                     android:text="今日签到"
-                    android:textSize="20dp"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -172,8 +183,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="30dp"
                             android:gravity="center"
-                            android:text="助学金快跑"
-                            />
+                            android:text="助学金快跑" />
 
                     </LinearLayout>
 
@@ -193,7 +203,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="30dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
@@ -214,12 +224,14 @@
                             android:layout_height="100dp"
                             android:scaleType="fitXY"
                             android:src="@mipmap/pic_index_todaynews_black" />
+
                         <TextView
                             android:id="@+id/editText3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="无论是樱桃的甘美，还是巧克力的甜腻，食物总是吸引着人类神奇的味蕾（lěi）。懂得料理的人都说，料理是有情感的，它们需要用心对待，用爱烹煮。同样地，以鲜艳的食色涂抹音乐也是另一种爱。当音乐与美食相携而行，餐桌上的圣女果正在呼吸顿挫，藤蔓间的葡萄只为浪漫一醉而结成一串。挂着露珠的棠梨叙述着初恋的写意，汤中一群呛口的红辣椒，也嘶吼着爱情里所有的冲锋陷阵。今天，Music Bazaar就将带着你一同回味情感料理在音乐中发酵时的温度，来音乐的怀里，唤醒沉睡的味蕾，让情感的料理，住进胃里。"
-                             />
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="无论是樱桃的甘美，还是巧克力的甜腻，食物总是吸引着人类神奇的味蕾（lěi）。懂得料理的人都说，料理是有情感的，它们需要用心对待，用爱烹煮。同样地，以鲜艳的食色涂抹音乐也是另一种爱。当音乐与美食相携而行，餐桌上的圣女果正在呼吸顿挫，藤蔓间的葡萄只为浪漫一醉而结成一串。挂着露珠的棠梨叙述着初恋的写意，汤中一群呛口的红辣椒，也嘶吼着爱情里所有的冲锋陷阵。今天，Music Bazaar就将带着你一同回味情感料理在音乐中发酵时的温度，来音乐的怀里，唤醒沉睡的味蕾，让情感的料理，住进胃里。" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -228,10 +240,10 @@
                     android:id="@+id/button"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:background="@color/colorAccent"
                     android:text="往期美文"
