@@ -17,6 +17,7 @@ import com.example.li.calorie_run.R;
 import com.example.li.calorie_run.view.AccountView;
 import com.example.li.calorie_run.util.HeadUtil;
 
+import com.example.li.calorie_run.view.MeActivity;
 import com.example.li.calorie_run.view.adapter.MainHeaderAdAdapter;
 
 
@@ -50,15 +51,15 @@ public class IndexFragment extends Fragment implements AccountView {
             @Override
             public void onClick(View v) {
 
-//                Intent intent = new Intent(getActivity(), MeFragment.class);
-//                startActivity(intent);
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
-                MeFragment demoFragment = new MeFragment();
-                ft
-                        .addToBackStack(null)  //将当前fragment加入到返回栈中
-                        .replace(R.id.fragment_index,demoFragment)
-                        .show(demoFragment)
-                        .commit();
+                Intent intent = new Intent(getActivity(), MeActivity.class);
+                startActivity(intent);
+//                FragmentTransaction ft = getFragmentManager().beginTransaction();
+//                MeFragment demoFragment = new MeFragment();
+//                ft
+//                        .addToBackStack(null)  //将当前fragment加入到返回栈中
+//                        .replace(R.id.fragment_index,demoFragment)
+//                        .show(demoFragment)
+//                        .commit();
             }
         });
 

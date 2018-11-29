@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.li.calorie_run.R;
-import com.example.li.calorie_run.view.mainnavigations.MeFragment;
 
 public class SportsPartnerActivity extends AppCompatActivity {
 

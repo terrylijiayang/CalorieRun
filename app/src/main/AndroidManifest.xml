@@ -26,7 +26,8 @@
         </activity>
         <activity android:name=".view.SportsPartnerActivity" />
         <activity android:name=".view.SportsIssueActivity" />
-        <activity android:name=".view.SportDetailActivity"></activity>
+        <activity android:name=".view.SportDetailActivity" />
+        <activity android:name=".view.MeActivity"></activity>
     </application>
 
 </manifest>
