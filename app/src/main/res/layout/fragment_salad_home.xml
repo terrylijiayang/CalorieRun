@@ -6,6 +6,7 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
     android:layout_marginBottom="50dp">
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,6 +32,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
             android:text="青春的味道是校门口的小吃摊的零食，家乡的味道便是那从小吃到大的那一碗特产面。这些意象化的东西，都由食物作为承载的物质留在记忆中，而对于脑浊乐队来说，青春的味道或许就是那碗大家一起吃的《碎肉拌面》。这一份看似再简单不过的拌面，却是脑浊乐队的宝贝。他们直接而炽（chì）烈，呼唤着摇滚和叛逆的激情，在一片龟（jūn）裂得惨然的河床上，他们以一腔热血注入阳光，以一份美味宣告理想。主唱肖容不加任何技巧地歌唱，在歌声中传递的是最纯粹的青春与情怀。而那份情怀就像一碗碎肉拌面，既是最简单的食物，也是最原始的美味。"/>
     </LinearLayout>
 </ScrollView>

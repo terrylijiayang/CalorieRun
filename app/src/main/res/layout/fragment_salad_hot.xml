@@ -3,10 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="50dp"
     tools:context=".view.mainnavigations.saladtabs.SaladHotFragment">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,38 +25,370 @@
                 android:layout_weight="1"
                 android:background="@drawable/bd_bgreen"
                 android:orientation="vertical"
-                android:padding="2dp">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/bd_bgreen"
                     android:orientation="vertical"
-                    android:padding="3dp">
-                        <TextView
-                            android:layout_width="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <LinearLayout
+                            android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:textSize="18dp"
-                            android:text="大暑沙拉"/>
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:text="大暑沙拉"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
                     <ImageView
                         android:id="@+id/img_todaynews"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:scaleType="fitXY"
                         android:src="@mipmap/pic_index_todaynews_black" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="18dp"
-                        android:text="RMB:12元"/>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:orientation="horizontal">
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1">
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="fill_parent"
+                             android:orientation="vertical"
+                             android:layout_weight="2"
+                             >
+                             <LinearLayout
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="wrap_content"
+                                 android:orientation="horizontal">
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal"
+                                     android:gravity="center"
+                                     >
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:textSize="18dp"
+                             android:text="RMB:12元"
+                             android:textColor="@color/black"
+                             android:layout_gravity="center"/>
+                                 </LinearLayout>
+                             </LinearLayout>
+                         </LinearLayout>
+                     </LinearLayout>
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="5.0"/>
+
+                          <ImageView
+                              android:layout_width="15dp"
+                              android:layout_height="15dp"
+                              android:layout_gravity="center"
+                              android:src="@mipmap/pingfenshezhi_h"/>
+                          <ImageView
+                              android:layout_width="15dp"
+                              android:layout_height="15dp"
+                              android:layout_gravity="center"
+                              android:src="@mipmap/pingfenshezhi_h"/>
+                          <ImageView
+                              android:layout_width="15dp"
+                              android:layout_height="15dp"
+                              android:layout_gravity="center"
+                              android:src="@mipmap/pingfenshezhi_h"/>
+                          <ImageView
+                              android:layout_width="15dp"
+                              android:layout_height="15dp"
+                              android:layout_gravity="center"
+                              android:src="@mipmap/pingfenshezhi_h"/>
+                          <ImageView
+                              android:layout_width="15dp"
+                              android:layout_height="15dp"
+                              android:layout_gravity="center"
+                              android:src="@mipmap/pingfenshezhi_h"/>
+                      </LinearLayout>
+                  </LinearLayout>
                     <TextView
                         android:id="@+id/editText3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
                         android:text="无论是樱桃的甘美，还是巧克力的甜腻，食物总是吸引着人类神奇的味蕾（lěi）。懂得料理的人都说，料理是有情感的，它们需要用心对待，用爱烹煮。同样地，以鲜艳的食色涂抹音乐也是另一种爱。当音乐与美食相携而行，餐桌上的圣女果正在呼吸顿挫，藤蔓间的葡萄只为浪漫一醉而结成一串。挂着露珠的棠梨叙述着初恋的写意，汤中一群呛口的红辣椒，也嘶吼着爱情里所有的冲锋陷阵。今天，Music Bazaar就将带着你一同回味情感料理在音乐中发酵时的温度，来音乐的怀里，唤醒沉睡的味蕾，让情感的料理，住进胃里。"
                         />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/dianzan"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="8423"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/pinglun"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="8423"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/gouwucheman"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="立即购买"
+                                android:textColor="@color/colorAccent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bd_bgreen"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bd_bgreen"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:text="外卖轻食水果沙拉健康套餐"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/pic_index_todaynews_black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="2"
+                                >
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="18dp"
+                                            android:text="RMB:14元"
+                                            android:textColor="@color/black"
+                                            android:layout_gravity="center"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5.0"/>
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/pingfenshezhi_h"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/pingfenshezhi_h"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/pingfenshezhi_h"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/pingfenshezhi_h"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/pingfenshezhi_h"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="2010年，在美国上映的电影《美食、祈祷和恋爱》中，生活遭遇困境之后的女主角伊丽莎白，在感受不同国度的美好事物过程中，重新唤起了内心的生活希望。她打破了表象的幸福，经历了情感的瓶颈期，却在美食中窥见不可置信的完美。在其中的插曲《heart of gold》中，加拿大摇滚歌手Neil Young用他略显沧桑的声音诉说着爱情。歌曲开头的口风琴声音率先出场，随着吉他的扫弦声为其增添一分沧桑，将人们拉回最初的爱恋时光。美食有着治愈人心的魔力，当食物和烦恼一起消化掉，我们便能像伊丽莎白一样，在美食中寻找，邂逅和重逢爱情。
+——Neil Young《Heart Of Gold》"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/dianzan"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="8423"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/pinglun"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="8423"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/gouwucheman"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="立即购买"
+                                android:textColor="@color/colorAccent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </LinearLayout>

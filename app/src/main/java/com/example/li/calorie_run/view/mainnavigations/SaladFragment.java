@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import com.example.li.calorie_run.R;
 import com.example.li.calorie_run.view.mainnavigations.saladtabs.SaladHotFragment;
 import com.example.li.calorie_run.view.mainnavigations.saladtabs.SaladHomeFragment;
+import com.example.li.calorie_run.view.mainnavigations.saladtabs.SaladMainFragment;
 
 
 public class SaladFragment extends Fragment {
@@ -49,7 +50,7 @@ public class SaladFragment extends Fragment {
 //        tabLayout.setupWithViewPager(vp_pager);
         mFragmentArrays[0] = SaladHomeFragment.newInstance();
         mFragmentArrays[1] = SaladHotFragment.newInstance();
-        mFragmentArrays[2] = SaladHotFragment.newInstance();
+        mFragmentArrays[2] = SaladMainFragment.newInstance();
         mFragmentArrays[3] = SaladHotFragment.newInstance();
         mFragmentArrays[4] = SaladHotFragment.newInstance();
         mFragmentArrays[5] = SaladHotFragment.newInstance();
