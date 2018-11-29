@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.example.li.calorie_run.R;
 import com.example.li.calorie_run.presenter.IAccountPresenter;
 import com.example.li.calorie_run.presenter.Impl.AccountPresenterImpl;
+import com.example.li.calorie_run.tools.ConstantValue;
 
 
 import java.util.Timer;
@@ -87,6 +88,7 @@ public class LoginActivity extends AppCompatActivity  implements View.OnKeyListe
     }
 
     public void loginSuccess(){
+        ConstantValue.USER_ID = user_id.getText().toString().trim();
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
         finish();

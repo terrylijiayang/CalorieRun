@@ -6,4 +6,5 @@ package com.example.li.calorie_run.tools;
  */
 public class ConstantValue {
     final static public String SERVER_PATH = "https://calorierun.chinacloudsites.cn";
+    public static String USER_ID = "";
 }

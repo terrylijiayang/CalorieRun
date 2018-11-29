@@ -12,12 +12,13 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.li.calorie_run.R;
+import com.example.li.calorie_run.view.AccountView;
 import com.example.li.calorie_run.view.LoginActivity;
 import com.example.li.calorie_run.view.MainActivity;
 
 
-public class IndexFragment extends Fragment {
-
+public class IndexFragment extends Fragment implements AccountView {
+    private String value;
     private View view;
     private SwipeRefreshLayout mRefreshLayout;// SwipeRefreshLayout下拉刷新控件
     private ImageView imageView;
@@ -67,6 +68,15 @@ public class IndexFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void navigateToHome(String value) {
+        this.value = value;
+    }
+
+    @Override
+    public void showMsg(String msg) {
+        Toast.makeText(getActivity(),msg,Toast.LENGTH_SHORT).show();
+    }
 
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
