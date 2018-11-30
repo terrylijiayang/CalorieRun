@@ -10,15 +10,20 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.li.calorie_run.R;
 import com.example.li.calorie_run.view.AccountView;
 import com.example.li.calorie_run.util.HeadUtil;
 
+import com.example.li.calorie_run.view.LoginActivity;
+import com.example.li.calorie_run.view.MainActivity;
 import com.example.li.calorie_run.view.MeActivity;
 import com.example.li.calorie_run.view.adapter.MainHeaderAdAdapter;
+import com.example.li.calorie_run.view.mainnavigations.index_camera.activity.CameraActivity;
 
 
 public class IndexFragment extends Fragment implements AccountView {
@@ -26,6 +31,7 @@ public class IndexFragment extends Fragment implements AccountView {
     private View view;
     private SwipeRefreshLayout mRefreshLayout;// SwipeRefreshLayout下拉刷新控件
     private ImageView imageView;
+    private TextView txt_earlyClick;
 
     protected  int [] icons={R.mipmap.pic_index_black,R.mipmap.back41,R.mipmap.component64};
     protected ViewPager mVPagerHeaderAd;//广告头
@@ -85,6 +91,17 @@ public class IndexFragment extends Fragment implements AccountView {
                 });
             }
         });
+
+
+        txt_earlyClick = view.findViewById(R.id.txt_earlyClick);
+        txt_earlyClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), CameraActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 

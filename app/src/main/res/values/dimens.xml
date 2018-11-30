@@ -6,4 +6,7 @@
     <!--//改变navigation图标和大小-->
     <dimen name="design_bottom_navigation_active_text_size">12dp</dimen>
     <dimen name="design_bottom_navigation_text_size">12dp</dimen>
+
+    <!--<dimen name="activity_horizontal_margin">128dp</dimen>-->
+
 </resources>

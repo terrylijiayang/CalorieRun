@@ -62,7 +62,7 @@ public class EarlyClickPresenterImpl implements IEarlyClickPresenter, AccountVie
 
                                     //成功
                                     if(value.equals("1")){
-                                        showMsg("打卡成功");
+                                        navigateToHome("打卡成功");
                                         //return ;
                                     }else if(value.equals("0")){
                                         showMsg("用户已打卡");

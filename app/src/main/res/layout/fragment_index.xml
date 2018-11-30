@@ -103,7 +103,7 @@
                     android:src="@mipmap/pic_index_black" />-->
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/txt_earlyClick"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginBottom="30dp"

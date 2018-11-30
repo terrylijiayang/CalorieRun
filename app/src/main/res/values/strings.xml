@@ -12,4 +12,7 @@
     <string name="validate">验证码</string>
     <string name="tel">请输入手机号码</string>
     <string name="landing">下  一  步</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
 </resources>
