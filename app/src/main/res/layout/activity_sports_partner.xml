@@ -141,7 +141,8 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
 
                         <Button
                             android:id="@+id/btn_join_1"
@@ -164,9 +165,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -280,14 +281,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:gravity="center"
-                            android:text="还差2人"
+                            android:text="还差1人"
                             android:textColor="#B11B2D"
                             android:textSize="12sp" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
 
                         <Button
                             android:id="@+id/btn_join_2"
@@ -398,7 +400,6 @@
                         android:textSize="10dp" />
 
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -411,6 +412,14 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -425,6 +434,7 @@
                             android:textColor="#ffffff" />
                     </LinearLayout>
                 </LinearLayout>
+
 
             </LinearLayout>
 

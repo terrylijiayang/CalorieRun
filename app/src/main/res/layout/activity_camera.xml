@@ -23,4 +23,5 @@
 
     <include layout="@layout/camera_bottom_panel" /> <!-- 底部控制栏 -->
 
+
 </RelativeLayout>

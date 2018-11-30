@@ -34,7 +34,6 @@ public class ShopRecommendFragment extends Fragment {
             return view;
         }
         view = inflater.inflate(R.layout.fragment_shop_recommend, container, false);
-
         return view;
     }
 

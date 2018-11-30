@@ -15,7 +15,7 @@
             android:orientation="vertical">
             <!--内容-->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="10dp"
@@ -60,7 +60,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/play_detail_person1"
                     android:text="我是超级管理员"
-                    android:textSize="10dp" />
+                    android:textSize="12dp" />
 
                 <ImageView
                     android:id="@+id/imageView28"
@@ -75,7 +75,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="20dp"
                     android:text="发起人"
-                    android:textSize="10dp" />
+                    android:textSize="12dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -106,7 +106,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/play_detail_person2"
                     android:text="怎么吃都不胖啊"
-                    android:textSize="10dp" />
+                    android:textSize="12dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -114,7 +114,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="20dp"
                     android:text="成员"
-                    android:textSize="10dp" />
+                    android:textSize="12dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -145,7 +145,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/play_detail_person3"
                     android:text="喵了个咪-333"
-                    android:textSize="10dp" />
+                    android:textSize="12dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -153,7 +153,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="20dp"
                     android:text="成员"
-                    android:textSize="10dp" />
+                    android:textSize="12dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -184,7 +184,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/play_detail_person4"
                     android:text="你好瘦啊"
-                    android:textSize="10dp" />
+                    android:textSize="12dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -192,7 +192,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="20dp"
                     android:text="成员"
-                    android:textSize="10dp" />
+                    android:textSize="12dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -217,7 +217,7 @@
                     android:layout_toRightOf="@+id/play_detail_person5"
                     android:text="英俊美男子"
                     android:textColor="#B11B2D"
-                    android:textSize="10dp" />
+                    android:textSize="12dp" />
 
                 <Button
                     android:id="@+id/button"
@@ -228,7 +228,7 @@
                     android:background="@drawable/a_shape_bred_bno_radius"
                     android:text="退   出"
                     android:textColor="@color/white"
-                    android:textSize="10sp" />
+                    android:textSize="12dp" />
 
             </RelativeLayout>
 
@@ -253,7 +253,7 @@
                     android:layout_marginLeft="80dp"
                     android:text="距离约定时间还有8小时32分，此队还差一人组满"
                     android:textColor="#B11B2D"
-                    android:textSize="10sp" />
+                    android:textSize="12dp" />
             </RelativeLayout>
 
         </LinearLayout>

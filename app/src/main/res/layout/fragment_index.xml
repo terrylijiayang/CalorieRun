@@ -67,6 +67,7 @@
                             android:inputType="textPersonName"
                             android:paddingLeft="10dp"
                             android:paddingRight="5dp"
+                            android:textSize="16dp"
                             tools:layout_editor_absoluteX="63dp"
                             tools:layout_editor_absoluteY="2dp" />
 
@@ -87,7 +88,7 @@
                 <android.support.v4.view.ViewPager
                     android:id="@+id/vpager_main_header_ad"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="200dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="20dp">
 
@@ -115,7 +116,7 @@
                     android:gravity="center_vertical|center_horizontal|center"
                     android:text="今日签到"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="16dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -136,6 +137,7 @@
                             android:layout_height="30dp"
                             android:gravity="center"
                             android:textColor="@color/black"
+                            android:textSize="18dp"
                             android:text="海外购" />
 
                         <com.loopj.android.image.SmartImageView
@@ -143,7 +145,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:scaleType="fitXY"
-                            android:src="@mipmap/pic_index_haiwaigou_black" />
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@mipmap/cars" />
                     </LinearLayout>
 
                     <ImageView
@@ -152,8 +156,9 @@
                         android:layout_height="100dp"
                         android:layout_alignParentBottom="true"
                         android:layout_centerHorizontal="true"
+
                         android:layout_weight="1"
-                        android:src="@mipmap/pic_index_haiwaigou"
+                        android:src="@mipmap/car"
                         tools:layout_editor_absoluteX="20dp"
                         tools:layout_editor_absoluteY="20dp" />
 
@@ -176,14 +181,17 @@
                             android:layout_height="30dp"
                             android:gravity="center"
                             android:textColor="@color/black"
+                            android:textSize="18dp"
                             android:text="助学金快跑" />
 
                         <com.loopj.android.image.SmartImageView
                             android:id="@+id/img_zhuxuejin_black"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
                             android:scaleType="fitXY"
-                            android:src="@mipmap/pic_index_zhuxuejin_black" />
+                            android:src="@mipmap/book" />
 
                         <TextView
                             android:id="@+id/textView4"
@@ -201,7 +209,7 @@
                         android:layout_alignParentBottom="true"
                         android:layout_centerHorizontal="true"
                         android:layout_weight="1"
-                        android:src="@mipmap/pic_index_zhuxuejin"
+                        android:src="@mipmap/booklogo"
                         tools:layout_editor_absoluteX="20dp"
                         tools:layout_editor_absoluteY="20dp" />
 
@@ -211,8 +219,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/bd_bgreen"
                     android:orientation="vertical"
@@ -223,6 +231,10 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bd_bgreen"
                         android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="10dp"
                         android:padding="3dp">
 
                         <TextView
@@ -230,6 +242,9 @@
                             android:layout_height="30dp"
                             android:gravity="center"
                             android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
                             android:text="今日美文" />
 
                         <ImageView
@@ -237,6 +252,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="fitXY"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
                             android:src="@mipmap/pic_index_todaynews_black" />
 
                         <TextView
@@ -245,6 +264,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
                             android:text="无论是樱桃的甘美，还是巧克力的甜腻，食物总是吸引着人类神奇的味蕾（lěi）。懂得料理的人都说，料理是有情感的，它们需要用心对待，用爱烹煮。同样地，以鲜艳的食色涂抹音乐也是另一种爱。当音乐与美食相携而行，餐桌上的圣女果正在呼吸顿挫，藤蔓间的葡萄只为浪漫一醉而结成一串。挂着露珠的棠梨叙述着初恋的写意，汤中一群呛口的红辣椒，也嘶吼着爱情里所有的冲锋陷阵。今天，Music Bazaar就将带着你一同回味情感料理在音乐中发酵时的温度，来音乐的怀里，唤醒沉睡的味蕾，让情感的料理，住进胃里。" />
                     </LinearLayout>
 

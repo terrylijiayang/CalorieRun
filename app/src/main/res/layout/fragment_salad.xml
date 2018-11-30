@@ -14,7 +14,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="180dp"
             android:id="@+id/salad_head">
 
             <com.loopj.android.image.SmartImageView
@@ -24,16 +24,16 @@
                 android:layout_alignParentTop="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@mipmap/pic_salad_header_black" />
+                android:src="@mipmap/banner" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="卡路里快跑"
+                android:text=""
                 android:textSize="20dp"
                 android:layout_centerVertical="true"
                 android:textColor="@color/white"
                 android:gravity="center"/>
-            <TextView
+        <!--    <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
@@ -44,7 +44,7 @@
                 android:textColor="@color/black"
                 android:paddingRight="10dp"
                 android:paddingLeft="10dp"
-                android:gravity="right"/>
+                android:gravity="right"/>-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"

@@ -21,73 +21,83 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@mipmap/shop1"
+                android:background="@mipmap/xxsg"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="10dp">
-                <ImageView
+               <!-- <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:gravity="center"
-                    android:src="@mipmap/xxsg"/>
+                    android:src="@mipmap/xxsg"/>-->
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@mipmap/shop2"
+                android:background="@mipmap/yyjg"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="10dp">
-                <ImageView
+               <!-- <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:gravity="center"
-                    android:src="@mipmap/yyjg"/>
+                    android:src="@mipmap/yyjg"/>-->
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@mipmap/shop3"
+                android:background="@mipmap/xxrl"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="10dp">
-                <ImageView
+               <!-- <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:gravity="center"
-                    android:src="@mipmap/xxrl"/>
+                    android:src="@mipmap/xxrl"/>-->
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@mipmap/shop3"
+                android:background="@mipmap/shry"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="10dp">
-                <ImageView
+        <!--        <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:gravity="center"
-                    android:src="@mipmap/shry"/>
+                    android:src="@mipmap/shry"/>-->
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@mipmap/shop4"
+                android:background="@mipmap/qita"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginBottom="20dp">
-                <ImageView
+              <!--  <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:gravity="center"
-                    android:src="@mipmap/qita"/>
+                    android:src="@mipmap/qita"/>-->
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

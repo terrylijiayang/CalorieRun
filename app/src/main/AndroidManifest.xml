@@ -14,7 +14,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/s_logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        >
         <activity
             android:name=".view.MainActivity"
             android:label="@string/app_name" />

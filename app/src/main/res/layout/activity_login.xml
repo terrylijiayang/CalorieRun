@@ -4,54 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/background"
+    android:background="@color/white"
     tools:context=".view.LoginActivity">
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:background="@mipmap/backlogin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btn_toregister"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/a_shape_bblue_bblue_radius"
+                android:text="注    册"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="30dp">
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            app:srcCompat="@mipmap/s_login_header" />
+        >
 
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:layout_marginTop="30dp"
             android:background="@drawable/a_shape_bwhite_bno_radius"
             android:gravity="center"
             android:orientation="horizontal"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            >
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@mipmap/user" />
+                app:srcCompat="@mipmap/phone" />
 
             <EditText
                 android:id="@+id/txt_id"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="45dp"
                 android:layout_weight="1"
                 android:background="@null"
                 android:ems="10"
                 android:hint="请输入学号"
                 android:inputType="number"
                 android:paddingLeft="15dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="5dp"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -70,20 +88,21 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@mipmap/password" />
+                app:srcCompat="@mipmap/code" />
 
             <EditText
                 android:id="@+id/txt_password"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="45dp"
                 android:layout_weight="1"
                 android:background="@null"
                 android:ems="10"
                 android:hint="请输入密码"
                 android:inputType="textPassword"
                 android:paddingLeft="15dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="5dp"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -92,27 +111,19 @@
         <Button
             android:id="@+id/btn_login"
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="40dp"
-            android:background="@drawable/a_shape_bblue_bblue_radius"
+            android:background="@drawable/login_btn"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:text="登    录"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/btn_toregister"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/a_shape_bblue_bblue_radius"
-            android:text="注    册"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textColor="@color/black"
+            android:textSize="14dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="30dp"
@@ -123,20 +134,49 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="right|center"
-                android:text="登录即代表阅读并同意"
-                android:textColor="@color/gray"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="left|center"
-                android:text="服务条款"
+                android:gravity="center"
+                android:text="第三方的登录"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               >
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:src="@mipmap/weixin"/>
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+
+                   android:src="@mipmap/qq"/>
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@mipmap/weibo"/>
+           </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
         </LinearLayout>
 
     </LinearLayout>
